@@ -1,0 +1,2 @@
+gcc $( pkg-config --cflags gtk4 ) -o client client.c $( pkg-config --libs gtk4 )
+gcc -o server server.c myMap.c -lcurl -lcjson -lsqlite3
